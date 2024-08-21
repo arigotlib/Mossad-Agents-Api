@@ -16,6 +16,7 @@ namespace MossadAgentsApi.Models
         public string nickname { get; set; }
         public int? x { get; set; }
         public int? y { get; set; }
-        public string Status { get; set; }
+        public string? Status { get; set; }
+        public string? direction { get; set; }
     }
 }

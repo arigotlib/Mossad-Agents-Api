@@ -16,5 +16,6 @@ namespace MossadAgentsApi.Models
         public string? photo_url { get; set; }// שמתי סימן שאלה כדי לאפשר לזה ליהיות ריק כיוון שבאפיון יש סתירה בין הישות לבין מה שנשלח מהסמולציה
         public int? x {  get; set; }
         public int? y { get; set; }
+        public string? direction { get; set; }
     }
 }
