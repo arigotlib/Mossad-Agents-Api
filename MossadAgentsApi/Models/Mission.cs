@@ -12,5 +12,9 @@ namespace MossadAgentsApi.Models
         [Key]
         public int Id { get; set; }
         public string status { get; set; }
+        public int agentId { get; set; }
+        public Agent agent { get; set; }
+        public int targetId { get; set; }
+        public Target target { get; set; }
     }
 }
