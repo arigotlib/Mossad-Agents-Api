@@ -7,13 +7,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MossadAgentsApi.Models
 {
-    internal class Target
+    public class Target
     {
         [Key]
         public int Id { get; set; }
-        public string name { get; set; }
-        public string position { get; set; }
-        public string? photo_url { get; set; }// שמתי סימן שאלה כדי לאפשר לזה ליהיות ריק כיוון שבאפיון יש סתירה בין הישות לבין מה שנשלח מהסמולציה
+        public string? name { get; set; }
+        public string? position { get; set; }
+        public string? photo_url { get; set; }
         public int? x {  get; set; }
         public int? y { get; set; }
         public string? direction { get; set; }

@@ -7,14 +7,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MossadAgentsApi.Models
 {
-    internal class Mission
+    public class Mission
     {
         [Key]
         public int Id { get; set; }
-        public string status { get; set; }
+        public string? status { get; set; }
         public int agentId { get; set; }
-        public Agent agent { get; set; }
+        public Agent? agent { get; set; }
         public int targetId { get; set; }
-        public Target target { get; set; }
+        public Target? target { get; set; }
+
+        public int TimeToTarget { get; set; }
     }
 }

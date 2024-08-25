@@ -8,15 +8,15 @@ using System.Drawing;
 
 namespace MossadAgentsApi.Models
 {
-    internal class Agent
+    public class Agent
     {
         [Key]
         public int Id { get; set; }
-        public string photo_url { get; set; }
-        public string nickname { get; set; }
+        public string? photo_url { get; set; }
+        public string? nickname { get; set; }
         public int? x { get; set; }
         public int? y { get; set; }
-        public string? Status { get; set; }
+        public bool Status { get; set; } = false;
         public string? direction { get; set; }
     }
 }
